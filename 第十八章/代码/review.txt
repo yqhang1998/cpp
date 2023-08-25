@@ -1,0 +1,46 @@
+1.
+double x{8.8};
+double x = {8.8};
+
+string s{"What a brancing effect"};
+
+int k{99};
+
+Z200 zip{200, 'Z', 0,675};
+
+vector<int> ai{3, 9, 4, 7, 1};
+
+2.
+r1(w)  --> const double &rx = w; OK
+r1(w+1) --> const double &rx = w+1; OK
+r1(up(w)) --> OK
+r2(w) --> double &rx = w; OK
+r2(w+1) --> double &rx = w+1; NO
+r2(up(w))  NO
+r3(w) ---> double &&rx = w; NO
+r3(w+1) --> double &&rx = w+1; OK
+r3(up(w)) --> OK
+ 
+3.
+a.
+double &rx
+const double &rx
+const double &rx
+b.
+double &rx
+double &&rx
+double &&rx
+c.
+const double &rx
+double &&rx
+double &&rx
+
+4.
+P813
+
+6.
+show2(18.0, [](double x){return 1.8*x + 32});
+
+7.
+sum(temp_c, [&total](double w){total += w;});
+cout << "total: " << total << endl;

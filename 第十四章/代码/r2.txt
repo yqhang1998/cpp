@@ -1,0 +1,13 @@
+Gloam::Gloam(int g, const char *s) : glip(g), fb(s)
+{
+}
+
+Gloam::Gloam(int g, const Frabjous &f) : glip(g), fb(f)
+{
+}
+
+void Gloam::tell()
+{
+	cout << glip << endl;
+	fb.tell();
+}

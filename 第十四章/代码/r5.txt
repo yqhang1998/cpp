@@ -1,0 +1,14 @@
+1)
+ArrayTP<string, 10> aa;
+
+2)
+Stack<ArrayTP<double, 10>> stack_arr_aa;
+
+3)
+ArratTP<Stack<Worker *>, 10> arr_stk_ptr;
+
+4)
+ArrayTP<int, 10>
+ArrayTP<double, 10>
+ArrayTP<int, 5>
+ArrayTP<ArrayTP<int, 5>, 10>

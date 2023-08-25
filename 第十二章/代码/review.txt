@@ -1,0 +1,47 @@
+1.
+a)
+b)
+String::String(const char *s)
+{
+	len = strlen(s);
+	str = new char[len + 1];
+	strcpy(str, s);
+}
+
+2.
+
+
+4.
+class nifty
+{
+	private:
+		char *personality;
+		int talents;
+	public:
+		nifty();
+		nifty(const char *s);
+		~nifty(){delete personality;}
+		friend ostream &operator<<(ostream &os, const nifty &n);	
+}
+
+nifty::nifty()
+{
+	personality = NULL;
+	talents = 0;
+}
+
+nifty::nifty(const char *s)
+{
+	personality = new char[strlen(s) + 1];
+	strcpy(personality, s);
+	talents = 0;
+}
+
+ostream &operator<<(ostream &os, const nifty &n)
+{
+	os << n.personality << endl;
+	os << n.talents << endl;
+	return os;
+}
+
+

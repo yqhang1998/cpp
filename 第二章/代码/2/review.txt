@@ -1,0 +1,17 @@
+1.函数
+2.包含iostream头文件，将头文件内容添加到源代码中
+3.using是预编译器指令，使用std命名空间
+4.cout << "Hello world" << endl;
+5.int cheeses;
+6.cheeses = 32;
+7.cin >> cheeses;
+8.cout << "We have " << cheeses << " varities of cheese," << endl;
+9.
+1)函数名叫froop，带有一个参数t，参数类型是double类型，并且函数返回一个整型值
+2）函数名叫rattle，带有一个参数n,参数类型是int类型,该函数无返回值
+3）函数名叫prune,函数无参数，函数返回一个整型值
+10.当函数没有返回值时，void rattle(int n)
+11.
+1)using namespace std;
+2)using std::cout;
+3)std::cout

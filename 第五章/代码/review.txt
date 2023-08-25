@@ -1,0 +1,34 @@
+1.rukou:for() while()
+  chukou: do while
+
+2.
+ 01234
+ 
+
+3.
+ 0369
+ 12
+
+4.
+ 6
+ 8
+
+5.
+  k = 8
+ 
+6.
+  int i;
+  for(i = 1; i < 64; i *= 2)
+	cout << i << ",";
+  cout << i << endl;
+
+7.
+ use "{   ; ; ;  ; }"
+
+8.
+ 1)  valid,  x = 20
+ 2) valid, (y = 1), 024  --> 024
+
+9.
+  cin >> ch  --->  blank char (enter tab blank)
+  cin.get(ch), ch = cin.get() 

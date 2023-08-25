@@ -1,0 +1,82 @@
+1.
+
+2.
+a.void song(const char *name, int times = 1);
+b.none
+c.void song(const char *name = "O, My Papa", int times = 1);
+
+3.
+#include <iostream>
+
+void iquote(int n)
+{
+	cout << "\"" << n << "\n" << endl;
+}
+
+void iquote(double d)
+{
+	cout << "\"" << d << "\"" << endl; 
+}
+
+void iquote(string s)
+{
+	cout << "\"" << s << "\"" << endl;
+}
+
+4.
+a.
+void show_box(const box &b)
+{
+	cout << "Name:" << b.maker << endl;
+	cout << "Height:" << b.height << endl;
+	cout << "Width:" << b.width << endl;
+	cout << "Length:" << b.length << endl;
+	cout << "Volume:" << b.volume << endl;
+}
+b.
+void set_volume(box &b)
+{
+	b.volume = b.height * b.width * b.length;
+}
+
+5.
+see r5.cpp
+
+6.
+a.
+double mass(double density, double volume = 1.0);
+overload:
+double mass(double density, double volume);
+double mass(double density);
+
+b.
+overload:
+void repeat(int times, const char *str);
+void repeat(const char *str);
+
+c.
+int average(int a, int b);
+double average(double a, double b);
+
+d.
+none
+
+7.
+template <class T>
+T max(T t1, T t2)
+{
+	return t1 > t2 ? t1 : t2;
+}
+
+8.
+template <>box max(box b1, box b2)
+{
+	return b1.volume > b2.volume ? b1 : b2;
+}
+
+9.
+v1-->float
+v2-->float &
+v3-->float &
+v4-->int
+v5-->double
